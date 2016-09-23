@@ -3,13 +3,12 @@
 <head>
 	<title>Password Generator</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<?php require 'logic.php'; ?>
 </head>
 <body>
 
 	<h1>Password Generator</h1>
-	<p class='password'></p>
+	<p class='password'><?php echo $password; ?></p>
 	<p>My first paragraph.</p>
 	<form action="index.php" method="GET">
 			<label for='numWords'># of Words</label>

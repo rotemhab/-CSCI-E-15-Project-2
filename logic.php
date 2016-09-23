@@ -13,8 +13,8 @@ else{
 	$numWords = 4;
 }
 
-#validate the number of words doesn't exceed nine
-if ($numWords <=9){
+#validate word input is a number and that the number doesn't exceed nine
+if (is_numeric($numWords) AND $numWords <=9){
 	#define the words array
 	$rand_keys = array_rand($words, $numWords);
 	$password = "";
@@ -25,7 +25,6 @@ if ($numWords <=9){
 		}
 	}
 
-
 	if (isset($_GET['number'])){
 		$password.= rand(0,9);
 	}
@@ -33,9 +32,5 @@ if ($numWords <=9){
 	if (isset($_GET['symbol'])){
 		$password.= "@";
 	}
-
-
-
-	echo $password;
 }
 
