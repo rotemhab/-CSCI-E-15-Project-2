@@ -14,8 +14,11 @@ else{
 $words = array("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten");
 $rand_keys = array_rand($words, $numWords);
 $password = "";
-for($i=0; $i<$numWords; $i++){
+for ($i=0; $i<$numWords; $i++){
 	$password.= $words[$rand_keys[$i]];
+	if ($i!=$numWords-1){
+		$password.= "-";
+	}
 }
 
 echo $password;
