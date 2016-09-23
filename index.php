@@ -13,7 +13,7 @@
 	<p>My first paragraph.</p>
 	<form action="index.php" method="GET">
 			<label for='numWords'># of Words</label>
-			<input maxlength=1 type='text' name='numWords' id='numWords'>  (Max 9)
+			<input maxlength=1 type='text' name='numWords' id='numWords' value = "4" required>  (Max 9)
 			<br>
 			<input type='checkbox' name='number' id='number' >
 			<label for='number'>Add a number</label>
